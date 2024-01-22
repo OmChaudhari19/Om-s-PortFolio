@@ -51,7 +51,14 @@ const Nav = () => {
           </div>
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
             <div className="flex flex-shrink-0 items-center">
-              <div className="text-white pr-10 text-2xl name-heading">Om Chaudhari</div>
+              <div className="text-white pr-10 text-2xl name-heading">
+                <a
+                  href="https://drive.google.com/file/d/1fONJk8SMZsF_HOjdFJWZrwTEVQBax02a/view?usp=drive_link"
+                  target="blank"
+                >
+                  Om Chaudhari
+                </a>
+              </div>
             </div>
             <div className="hidden sm:ml-6 sm:block">
               <div className="flex space-x-7">
@@ -115,6 +122,14 @@ const Nav = () => {
               className="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium"
               aria-current="page"
             >
+              <Link to="about" smooth duration={500}>
+                {"about"}
+              </Link>
+            </div>
+            <div
+              className="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium"
+              aria-current="page"
+            >
               <Link to="projects" smooth duration={500}>
                 {"projects"}
               </Link>
@@ -123,8 +138,8 @@ const Nav = () => {
               className="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium"
               aria-current="page"
             >
-              <Link to="about" smooth duration={500}>
-                {"about"}
+              <Link to="experience" smooth duration={500}>
+                {"Skills"}
               </Link>
             </div>
             <div
